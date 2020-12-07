@@ -1,0 +1,24 @@
+<?xml version="1.0" standalone='no'?><!--*-nxml-*-->
+<!DOCTYPE service-group SYSTEM "avahi-service.dtd">
+
+<service-group>
+  <name replace-wildcards="yes">PRINTERNAME on %h</name>
+  <service>
+    <type>_pdl-datastream._tcp</type>
+    <port>9100</port>
+    <txt-record>qtotal=1</txt-record>
+    <txt-record>note=room 2</txt-record>
+    <txt-record>ty=PRINTERNAME</txt-record>
+    <txt-record>product=(PRINTERNAME series)</txt-record>
+    <txt-record>usb_MFG=BRAND</txt-record>
+    <txt-record>usb_MDL=MODEL series</txt-record>
+    <txt-record>Color=F</txt-record>
+    <txt-record>Duplex=F</txt-record>
+    <txt-record>Bind=F</txt-record>
+    <txt-record>Collate=F</txt-record>
+    <txt-record>Sort=F</txt-record>
+    <txt-record>Staple=F</txt-record>
+    <txt-record>Punch=F</txt-record>
+    <txt-record>PaperMax=legal-A4</txt-record>
+  </service>
+</service-group>
